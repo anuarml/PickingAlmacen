@@ -19,7 +19,7 @@ function requestUser(){
 					decryptPassword(obj.data);
 				}else{
 					//asl.notify(asl.notifications.application,asl.priority.normal,'Mensaje:','Usuario no registrado.',['OK'],[null]);
-					alert('El producto escaneado no coincide con el producto solicitado.');
+					alert('Usuario no registrado.');
 				}
 			} else if (obj.ajaxAnswer == AjaxAnswer.type.connectionError) {
 				//asl.notify(asl.notifications.application,asl.priority.normal,'Error:','No se pudo conectar con el servidor.',['OK'],[null]);

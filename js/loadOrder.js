@@ -339,7 +339,7 @@ function requestSaveScanQuantity(){
 			} else if (obj.ajaxAnswer == AjaxAnswer.type.connectionError) {
 				//asl.notify(asl.notifications.application,asl.priority.normal,'Error:','No se pudo conectar con el servidor.',['OK'],[null]);
 				//confirm('Error: No se pudo conectar con el servidor.',function(confirmed){ });
-				alert('El ID de la orden no es correcto');
+				alert('Error: No se pudo conectar con el servidor.');
 			} else {
 				if (obj.data) {
 					//asl.notify(asl.notifications.application,asl.priority.normal,'Error en el servidor:','('+obj.data.status+') '+obj.data.statusText,['OK'],[null]);
