@@ -1,0 +1,5 @@
+Prenotas_1.1
+26/10/2015 14:00
+Git SHA: 77369c55dafc8a18f50f781b88894205a1fd63d9
+
+Cambiados los notify (comentados) por los alert y confirm para que funcionen correctamente en la nueva version del SO del SB1.

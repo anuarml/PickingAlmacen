@@ -18,13 +18,16 @@ function requestUser(){
 				if(obj.data){
 					decryptPassword(obj.data);
 				}else{
-					asl.notify(asl.notifications.application,asl.priority.normal,'Mensaje:','Usuario no registrado.',['OK'],[null]);
+					//asl.notify(asl.notifications.application,asl.priority.normal,'Mensaje:','Usuario no registrado.',['OK'],[null]);
+					alert('El producto escaneado no coincide con el producto solicitado.');
 				}
 			} else if (obj.ajaxAnswer == AjaxAnswer.type.connectionError) {
-				asl.notify(asl.notifications.application,asl.priority.normal,'Error:','No se pudo conectar con el servidor.',['OK'],[null]);
+				//asl.notify(asl.notifications.application,asl.priority.normal,'Error:','No se pudo conectar con el servidor.',['OK'],[null]);
+				alert('Error: No se pudo conectar con el servidor.');
 			} else {
 				if (obj.data) {
-					asl.notify(asl.notifications.application,asl.priority.normal,'Error en el servidor:','('+obj.data.status+') '+obj.data.statusText,['OK'],[null]);
+					//asl.notify(asl.notifications.application,asl.priority.normal,'Error en el servidor:','('+obj.data.status+') '+obj.data.statusText,['OK'],[null]);
+					alert('Error en el servidor: ('+obj.data.status+') '+obj.data.statusText);
 				}
 			}
 		}
@@ -45,13 +48,16 @@ function decryptPassword(user){
 					oStorage.store('oUser',user);
 					window.location = 'productInfo.html';
 				}else{
-					asl.notify(asl.notifications.application,asl.priority.normal,'Mensaje:','Password Incorrecto.',['OK'],[null]);
+					//asl.notify(asl.notifications.application,asl.priority.normal,'Mensaje:','Password Incorrecto.',['OK'],[null]);
+					alert('Password Incorrecto.');
 				}
 			} else if (obj.ajaxAnswer == AjaxAnswer.type.connectionError) {
-				asl.notify(asl.notifications.application,asl.priority.normal,'Error:','No se pudo conectar con el servidor.',['OK'],[null]);
+				//asl.notify(asl.notifications.application,asl.priority.normal,'Error:','No se pudo conectar con el servidor.',['OK'],[null]);
+				alert('Error: No se pudo conectar con el servidor.');
 			} else {
 				if (obj.data) {
-					asl.notify(asl.notifications.application,asl.priority.normal,'Error en el servidor:','('+obj.data.status+') '+obj.data.statusText,['OK'],[null]);
+					//asl.notify(asl.notifications.application,asl.priority.normal,'Error en el servidor:','('+obj.data.status+') '+obj.data.statusText,['OK'],[null]);
+					alert('Error en el servidor: ('+obj.data.status+') '+obj.data.statusText);
 				}
 			}
 		}
