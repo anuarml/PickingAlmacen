@@ -1,5 +1,5 @@
 PickingAlmanecen1.1
-04/02/2016 10:13
-Git SHA: 36884986708a13ed105140f7bd333d81ad4e7984
+04/02/2016 10:20
+Git SHA: bc1bbf12c739e68507d36cc9f6487bff51f62561
 
 Cambiados los notify (comentados) por los alert y confirm para que funcionen correctamente en la nueva version del SO del SB1.
