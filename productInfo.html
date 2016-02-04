@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<title>Product Info</title>
+
+		<link href="css/picking.css" rel="stylesheet" type="text/css" media="screen, projection" />
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="product_info">
+				<div class="label">Usuario</div><div class="label">Sucursal</div>
+				<div id="dv_user" class="value"></div><div id="dv_office" class="value"></div>
+			</div>
+			<div class="product_info">
+				<div class="label">Inv</div><div class="label">Ord</div>
+				<div id="dv_inventoryQuantity" class="value">0</div><div id="dv_orderQuantity" class="value">0</div>
+			</div>
+			<div class="product_info">
+				<div class="label">Scan</div><div class="label">Total surtido</div>
+				<input id="txt_scanQuantity" class="value" type="number" title="Cantidad" value="0"/><div id="dv_totalQuantity" class="value">0</div>
+			</div>
+			<div class="buttons">
+				<!--<input id="txt_search" class="value" type="text" title="Artículo"/>-->
+				<div class="value" id="articleNumber"></div>
+                <div id="btn_ok" class="btn_ok"></div>
+			</div>
+		</div>
+
+		<div id="loading"><div>Cargando...</div></div>
+
+		<script type="text/javascript" src="js/asl.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<script type="text/javascript" src="js/storage.js"></script>
+		<script type="text/javascript" src="js/ajax.js"></script>
+		<script type="text/javascript" src="js/objects.js"></script>
+		<script type="text/javascript" src="js/loadOrder.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,78 @@
+.content{
+	font-family: Tahoma;
+	width: 100%;
+	height: 200px;
+	box-sizing:border-box;
+}
+
+.product_info {
+	border-bottom: solid 1px;
+	width: 100%;
+	overflow: auto;
+	padding: 2px;
+	box-sizing:border-box;
+}
+
+	.product_info div, .product_info input{
+		float:left;
+		width: 50%;
+		padding: 0 3px 0 3px;
+		box-sizing:border-box;
+	}
+
+
+		.product_info div.label{
+			font-weight: bold;
+			padding-bottom: 1px;
+			box-sizing:border-box;
+		}
+
+		.product_info .value{
+			box-sizing:border-box;
+			padding-left: 10px;
+			
+		}
+
+	/*.product_info:nth-child(2) div{
+		float:left;
+		width: 33.33%;
+		padding: 3px;
+		box-sizing:border-box;
+	}*/
+
+.buttons {
+	width: 100%;
+	overflow: auto;
+	padding-top: 4px;
+	box-sizing:border-box;
+}
+
+	.buttons .btn_ok {
+		width: 90px;
+		height: 45px;
+		float:right;
+		background: url(../img/ok_small.png) left top no-repeat;
+	}
+	
+	.buttons .value{
+		box-sizing:border-box;
+		padding-left: 10px;
+		float: left;
+	}
+		
+#loading {
+	position: absolute;
+	width: 320px;
+	height: 240px;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background-color: #FFFFFF;
+	//visibility: hidden;
+}
+
+	#loading div{
+		width: 120px;
+		height: 20px;
+		margin: 110px auto 110px auto;
+	}
